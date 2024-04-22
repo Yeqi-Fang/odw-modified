@@ -1,0 +1,43 @@
+/cvmfs/oasis.opensciencegrid.org/ligo/sw/conda/envs/igwn-py38/bin/lalinference_nest \
+--nlive 2048 \
+--maxmcmc 5000 \
+--tolerance 0.1 \
+--ifo H1 \
+--H1-cache /home/fyq/GW/odw-2023-main/Tutorials/Extension_topics/tuto_A.1/tmptzhmsdge_H-H1_GWOSC_4KHZ_R1-1251009248-32.lcf \
+--H1-channel H1:GWOSC-4KHZ_R1_STRAIN \
+--H1-flow 20 \
+--H1-psd /home/fyq/GW/odw-2023-main/Tutorials/Extension_topics/tuto_A.1/GW190828_063405_PSDs_H1.dat \
+--H1-spcal-envelope /home/fyq/GW/odw-2023-main/Tutorials/Extension_topics/tuto_A.1/GW190828_063405_CalEnv_H1.txt \
+--ifo L1 \
+--L1-cache /home/fyq/GW/odw-2023-main/Tutorials/Extension_topics/tuto_A.1/tmpycmvdp0q_L-L1_GWOSC_4KHZ_R1-1251009248-32.lcf \
+--L1-channel L1:GWOSC-4KHZ_R1_STRAIN \
+--L1-flow 20 \
+--L1-psd /home/fyq/GW/odw-2023-main/Tutorials/Extension_topics/tuto_A.1/GW190828_063405_PSDs_L1.dat \
+--L1-spcal-envelope /home/fyq/GW/odw-2023-main/Tutorials/Extension_topics/tuto_A.1/GW190828_063405_CalEnv_L1.txt \
+--ifo V1 \
+--V1-cache /home/fyq/GW/odw-2023-main/Tutorials/Extension_topics/tuto_A.1/tmpywjrt271_V-V1_GWOSC_4KHZ_R1-1251009248-32.lcf \
+--V1-channel V1:GWOSC-4KHZ_R1_STRAIN \
+--V1-flow 20 \
+--V1-psd /home/fyq/GW/odw-2023-main/Tutorials/Extension_topics/tuto_A.1/GW190828_063405_PSDs_V1.dat \
+--V1-spcal-envelope /home/fyq/GW/odw-2023-main/Tutorials/Extension_topics/tuto_A.1/GW190828_063405_CalEnv_V1.txt \
+--enable-spline-calibration \
+--spcal-nodes 10 \
+--trigtime 1251009263.8 \
+--srate 2048 \
+--seglen 4 \
+--approx IMRPhenomPv2pseudoFourPN \
+--fref 20 \
+--a_spin1-max 0.99 \
+--a_spin2-max 0.99 \
+--chirpmass-max 50.0 \
+--chirpmass-min 20.0 \
+--comp-max 160.4342212169403 \
+--comp-min 5.4813702000129565 \
+--distance-max 4000 \
+--mtotal-max 105 \
+--mtotal-min 55 \
+--q-min 0.125 \
+--outfile /home/fyq/GW/odw-2023-main/Tutorials/Extension_topics/tuto_A.1/lalinference_samples.hdf5 \
+--resume \
+--progress \
+> /home/fyq/GW/odw-2023-main/Tutorials/Extension_topics/tuto_A.1/lalinference.out 2> /home/fyq/GW/odw-2023-main/Tutorials/Extension_topics/tuto_A.1/lalinference.err &
